@@ -32,10 +32,10 @@ where "url you just copied" (without the quotation marks) is the url to this rep
 For example:
 
 ```
-git clone https://github.com/this-is-you/first-contributions.git
+git clone https://github.com/this-is-you/TH_CEC_Hacktoberfest-2022.git
 ```
 
-where `this-is-you` is your GitHub username. Here you're copying the contents of the first-contributions repository on GitHub to your computer.
+where `this-is-you` is your GitHub username. Here you're copying the contents of the TH_CEC_Hacktoberfest-2022 repository on GitHub to your computer.
 
 ## Create a branch
 
@@ -45,21 +45,22 @@ Change to the repository directory on your computer (if you are not already ther
 cd first-contributions
 ```
 
-Now create a branch using the `git checkout` command:
+Now create a branch using the `git switch` command:
 
 ```
-git checkout -b your-new-branch-name
+git switch -c your-new-branch-name
 ```
 
 For example:
 
 ```
-git checkout -b add-alonzo-church
+git switch -c add-alonzo-church
 ```
+
 
 ## Make necessary changes and commit those changes
 
-Now open `Contributors.md` file in a text editor, add your name to it. Don't add it at the beginning or end of the file. Put it anywhere in between. Now, save the file.
+Now open `Contributors.md` file in a text editor, add your github profile to it.Now, save the file.
 
 <img align="right" width="450" src="https://firstcontributions.github.io/assets/Readme/git-status.png" alt="git status" />
 
