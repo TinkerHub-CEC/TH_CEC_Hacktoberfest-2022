@@ -42,7 +42,7 @@ where `this-is-you` is your GitHub username. Here you're copying the contents of
 Change to the repository directory on your computer (if you are not already there):
 
 ```
-cd first-contributions
+cd TH_CEC_Hacktoberfest-2022
 ```
 
 Now create a branch using the `git switch` command:
