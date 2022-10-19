@@ -17,7 +17,6 @@
   background-color: #2d3436;  
   background-image: linear-gradient(315deg, #8433A0 17%, #FFAC33 74%); 
   background-image: url('https://wallpaperaccess.com/full/834264.jpg'); 
-  
   font-family: 'Cookie', cursive;  
 }  
 .title {  
@@ -36,7 +35,7 @@ input[type=button] {
   padding: 0;  
   margin: 5px;  
   box-sizing: border-box;  
-  background: #D03396;
+  background: #eddde7;
 border: none;  
   font-size: 30px;  
   line-height: 30px;  
@@ -53,7 +52,7 @@ input[type=text] {
   box-sizing: border-box;  
   border: none;  
   background: none;  
-  color: red;  
+  color: rgb(254, 250, 250);  
   text-align: right;  
   font-weight: 700;  
   font-size: 60px;  
@@ -61,51 +60,100 @@ input[type=text] {
   margin: 0 25px;  
   }  
 .calculator {  
-  background-color: #ffe821;  
-  box-shadow: 0px 0px 0px 10px #666;  
+  background-color: #5521ff;  
+  box-shadow: 0px 0px 0px 10px rgb(49, 197, 227);  
   border: 5px solid black;  
   border-radius: 10px;  
+
 }  
 #display {  
-  height: 40px;  
+  height: 60px;  
+  width: 250px;
   text-align: right;  
   background-color: black;  
-  border: 3px solid white;  
-  font-size: 18px;  
-  left: 2px;  
-  top: 2px;  
-  color: red;  
+  border: 5px solid rgb(240, 234, 234);  
+  font-size: 30px;  
+  padding-right: 10px;
+  left: 0px;  
+  top: 0px;  
+  color: rgb(247, 240, 240);  
 }  
 .btnTop {  
   color: white;  
-  background-color: #ffd1d3;  
+  background-color: #c79c9c;  
   font-size: 14px;  
   margin: auto;  
   width: 50px;  
   height: 25px;  
-}     
+}  
+
+
+
+
+@media (max-width: 470px)
+{
+
+#Titleid{
+  font-size: 19px;
+  font-style: oblique;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#display{
+  width: 250px;
+  height: 60px;  
+  text-align: right;  
+  background-color: rgb(26, 1, 1);  
+  border: 5px solid rgb(240, 234, 234);  
+  font-size: 30px;  
+  padding: 0px;
+  
+  color: rgb(247, 240, 240);  
+}
+#calcTable{
+  width: 50px;
+}
+#td-id{
+ 
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0px;
+  
+}
+#td-id-display{
+ 
+ padding-left: 0px;
+ padding-right: 0px;
+ 
+}
+
+
+
+}
+
     </style>  
 </head>  
 <body>  
    
-    <div class = "title"  align="center">  
+    <div id="Titleid" class = "title"  align="center">  
         Calculate Your Body Mass Index
 
     </div> 
-  <div class = "title"  align="center">  
+  <div  id="Titleid" class = "title"  align="center">  
     
-	As BMI=(Weight/Height*Height)
+	As BMI = (Weight/ Height × Height)
     </div>     
     <form name="Calculator" class = "calculator" >  
-<table border="2" align="center" cellpadding="15" cellspacing="12" bgcolor="#ffd1d3">  
-<tr>  
-<td>  
-<input type="text" name="Input" Size="35" id="display">  
+<table id="calcTable" border="2" align="center" cellpadding="15" cellspacing="12" bgcolor="#ffd1d3">  
+<tr id="tr-id">  
+<td id="td-id-display">  
+<input type="text" name="Input" Size="35" class="Display" id="display">  
 <br>  
 </td>  
 </tr>  
-<tr>  
-<td>  
+<tr id="tr-id">  
+<td id="td-id">  
 <input type="button" name = "one" style="font-size:30px" value=" 1 " OnClick="Calculator.Input.value += '1'">  
 <input type="button" name = "two" style = "font-size:30px" value=" 2 " OnCLick="Calculator.Input.value += '2'">  
 <input type="button" name = "three" style="font-size:30px" value=" 3 " OnClick="Calculator.Input.value += '3'">  
@@ -114,7 +162,7 @@ input[type=text] {
 <input type="button" name = "four" style="font-size:30px" value=" 4 " OnClick="Calculator.Input.value += '4'">  
 <input type="button" name = "five" style="font-size:30px" value=" 5 " OnCLick="Calculator.Input.value += '5'">  
 <input type="button" name = "six" style="font-size:30px" value=" 6 " OnClick="Calculator.Input.value += '6'">  
-<input type="button" name = "minus" style="font-size:30px" value=" - " OnClick="Calculator.Input.value += ' - '">  
+<input type="button" name = "minus" style="font-size:30px" value=" − " OnClick="Calculator.Input.value += ' - '">  
 <br>  
 <input type="button" name = "seven" style="font-size:30px" value=" 7 " OnClick="Calculator.Input.value += '7'">  
 <input type="button" name = "eight" style="font-size:30px" value=" 8 " OnCLick="Calculator.Input.value += '8'">  
@@ -124,7 +172,7 @@ input[type=text] {
 <input type="button" name = "clear" style="font-size:30px" value=" c " OnClick="Calculator.Input.value = ''">  
 <input type="button" name="zero" style="font-size:30px" value=" 0 " OnClick="Calculator.Input.value += '0'">  
 <input type="button" name="DoIt" style="font-size:30px" value=" = " OnClick="Calculator.Input.value = eval(Calculator.Input.value)">  
-<input type="button" name="div" style="font-size:30px" value=" / " OnClick="Calculator.Input.value += ' / '">  
+<input type="button" name="div" style="font-size:30px" value=" ÷ " OnClick="Calculator.Input.value += ' ÷ '">  
 <br>  
 </td>  
   
