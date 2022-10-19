@@ -69,7 +69,7 @@ If you go to the project directory and execute the command `git status`, you'll 
 Add those changes to the branch you just created using the `git add` command:
 
 ```
-git add Contributors.md
+git add . (git add index.html / git add bmi.html)
 ```
 
 Now commit those changes using the `git commit` command:
@@ -78,7 +78,7 @@ Now commit those changes using the `git commit` command:
 git commit -m "Add <your-name> to Contributors list"
 ```
 
-replacing `<your-name>` with your name.
+replacing `<your-name>` with your name
 
 ## Push changes to GitHub
 
