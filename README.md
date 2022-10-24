@@ -42,7 +42,7 @@ where `this-is-you` is your GitHub username. Here you're copying the contents of
 Change to the repository directory on your computer (if you are not already there):
 
 ```
-cd first-contributions
+cd TH_CEC_Hacktoberfest-2022
 ```
 
 Now create a branch using the `git switch` command:
@@ -69,7 +69,7 @@ If you go to the project directory and execute the command `git status`, you'll 
 Add those changes to the branch you just created using the `git add` command:
 
 ```
-git add Contributors.md
+git add index.html 
 ```
 
 Now commit those changes using the `git commit` command:
